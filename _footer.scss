@@ -1,0 +1,13 @@
+#icons {
+    grid-template-columns: 1fr 1fr 1fr;
+    .block {
+        width: 80px;
+        height: 80px;
+    }
+    .button {
+        color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

@@ -1,11 +1,22 @@
+@import '_general.scss';
 @import '_aboutMe.scss';
 @import '_projects.scss';
 @import '_footer.scss';
 
+:root {
+    --button: #1E3E62;
+    --btnShadow: #0B192C;
+    --background: #FF6500
+}
 
 @font-face {
     font-family: "star";
     src: url("fonts/Starborn.woff2");
+}
+
+@font-face {
+    font-family: "banana";
+    src: url("fonts/bananaStick.woff2")
 }
 
 body {
@@ -14,5 +25,5 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #27445D;
+    background-color: var(--background);
 }

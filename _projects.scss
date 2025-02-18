@@ -1,29 +1,29 @@
 #projects {
-    display: grid; 
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 20px;
-    width: fit-content; 
-}
-
-.project {
-    cursor: pointer;
-    height: 100px;
-    width: 300px;
-    background-color: white;
-    border-radius: 15px;
-    transition: 0.2s;
-    border-top: 5px solid green; 
-    border-left: 5px solid green; 
-    border-bottom: 8px solid green; 
-    border-right: 8px solid green; 
-    justify-self: flex-end;
-    align-self: flex-end;
-    &:hover {
-        border-bottom: 5px solid green;
-        border-right: 5px solid green;
+    .block {
+        height: 300px;
+    }
+    .button {
+        display: flex;
+        flex-direction: column;
+        img {
+            border-radius: 10px;
+            margin-top: 15px;
+            height: 250px;
+            width: 275px;
+            overflow: hidden;
+        }
     }
 }
+
+
+@media (max-width: 768px) {
+    #projects {
+        grid-template-columns: 1fr;
+    }
+    .block {
+        width: 300px;
+    }
+}
+
 
 
