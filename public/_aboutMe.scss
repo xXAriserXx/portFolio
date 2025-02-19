@@ -3,6 +3,7 @@
     h1 {
         font-family: "star";
         font-size: 3em;
-        color: white
+        color: var(--text);
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     }
 }

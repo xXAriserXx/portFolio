@@ -5,9 +5,16 @@
 @import '_video.scss';
 
 :root {
+    /*
+    --text:white
     --button: #1E3E62;
     --btnShadow: #0B192C;
     --background: #FF6500
+    */
+    --text: #EEEEEE;
+    --button: #31363F;
+    --btnShadow: #222831;
+    --background: #76ABAE
 }
 
 @font-face {
