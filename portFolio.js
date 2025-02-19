@@ -1,4 +1,4 @@
 "use strict";
-document.addEventListener("hover", () => {
-    console.log("yo")
+document.addEventListener("click", () => {
+    console.log("hello");
 });
