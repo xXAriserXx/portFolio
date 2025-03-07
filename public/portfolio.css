@@ -110,6 +110,22 @@ p {
   overflow: hidden;
 }
 
+.block:hover .description {
+  max-height: 500px;
+}
+
+.description {
+  position: absolute;
+  background-color: white;
+  color: black;
+  overflow: hidden;
+  max-height: 0px;
+  transition: 0.2s;
+  width: 275px;
+  top: 15px;
+  border-radius: 10px;
+}
+
 @media (max-width: 768px) {
   #projects {
     grid-template-columns: 1fr;
