@@ -68,13 +68,15 @@ p {
 .block .button svg {
   margin: 10px;
 }
-.block:hover-visible .button {
-  bottom: 2px;
-  right: 2px;
-}
 .block:active .button {
   bottom: 2px;
   right: 2px;
+}
+
+.block:hover .button {
+  right: 2px;
+  bottom: 2px;
+  color: var(--background);
 }
 
 @media (max-width: 768px) {
@@ -95,10 +97,14 @@ p {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
+#projects {
+  cursor: auto;
+}
 #projects .block {
   height: 300px;
 }
 #projects .button {
+  cursor: auto;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -131,6 +137,29 @@ p {
 }
 .description p {
   text-align: center;
+  cursor: default;
+}
+
+#projects .description .block {
+  height: 60px;
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-self: center;
+}
+#projects .description .block svg {
+  fill: var(--text);
+  transition: 0.2s;
+}
+
+#projects .description .block:hover svg {
+  fill: var(--background);
+}
+
+.containerDesc {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
 .blueText {

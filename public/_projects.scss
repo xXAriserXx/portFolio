@@ -1,8 +1,10 @@
 #projects {
+    cursor:auto;
     .block {
         height: 300px;
     }
     .button {
+        cursor:auto;
         overflow: hidden;
         display: flex;
         flex-direction: column;
@@ -36,8 +38,31 @@
     border-top-left-radius: 0px;
     p {
         text-align: center;
-
+        cursor: default;
     }
+}
+
+#projects .description .block {
+    height: 60px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    svg {
+        fill: var(--text);
+        transition: 0.2s;
+    }
+}
+
+#projects .description .block:hover svg{
+    fill: var(--background);
+}
+
+
+.containerDesc {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
 .blueText {

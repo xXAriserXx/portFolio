@@ -16,8 +16,6 @@
     }
 }
 
-
-
 section {
     display: grid; 
     margin: 30px;
@@ -59,18 +57,19 @@ p {
             margin: 10px;
         }
     }
-    &:hover-visible {
-        .button {
-            bottom: 2px;
-            right: 2px;
-        }
-    }
     &:active {
         .button {
             bottom: 2px;
             right: 2px;
         }
     }
+}
+
+.block:hover .button {
+    right: 2px;
+    bottom: 2px;
+    color: var(--background)
+
 }
 
 
