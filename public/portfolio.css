@@ -99,6 +99,7 @@ p {
   height: 300px;
 }
 #projects .button {
+  overflow: hidden;
   display: flex;
   flex-direction: column;
 }
@@ -111,19 +112,30 @@ p {
 }
 
 .block:hover .description {
-  max-height: 500px;
+  top: 0px;
+  opacity: 1;
 }
 
 .description {
+  opacity: 0;
+  height: 248px;
   position: absolute;
-  background-color: white;
+  background-color: var(--text);
   color: black;
-  overflow: hidden;
-  max-height: 0px;
   transition: 0.2s;
   width: 275px;
-  top: 15px;
+  top: -120px;
   border-radius: 10px;
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
+}
+.description p {
+  text-align: center;
+}
+
+.blueText {
+  color: var(--background);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 @media (max-width: 768px) {
@@ -150,6 +162,7 @@ p {
 
 .video {
   display: none;
+  width: 80vw;
 }
 
 #videoCheckBox {
@@ -172,7 +185,7 @@ p {
 .video video {
   position: relative;
   border: 3px solid var(--text);
-  width: 90vw;
+  width: 100%;
   height: auto;
   border-radius: 15px;
 }
@@ -203,6 +216,11 @@ p {
   display: none;
 }
 
+@media (max-width: 768px) {
+  .video {
+    top: 20% !important;
+  }
+}
 :root {
   /*
   --text:white
