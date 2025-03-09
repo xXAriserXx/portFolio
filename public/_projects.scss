@@ -19,23 +19,24 @@
 }
 
 .block:hover .description {
-    top: 0px;
     opacity: 1;
 }
 
 
 .description {
+    display: flex;
+    flex-direction: column;
     opacity: 0;
-    height: 248px; 
+    height: 233px; 
     position: absolute;
+    align-items: center;
+    justify-content: center;
     background-color: var(--text);
     color: black;
     transition: 0.2s;
     width: 275px; 
-    top: -120px;
+    top: 15px;
     border-radius: 10px;
-    border-top-right-radius: 0px;
-    border-top-left-radius: 0px;
     p {
         text-align: center;
         cursor: default;
@@ -48,16 +49,19 @@
     display: flex;
     align-items: center;
     justify-self: center;
+    transition: 0.2s;
     svg {
         fill: var(--text);
         transition: 0.2s;
     }
 }
 
-#projects .description .block:hover svg{
-    fill: var(--background);
+#projects .description .block:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    svg {
+        fill: var(--background);
+    }
 }
-
 
 .containerDesc {
     display: flex;

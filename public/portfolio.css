@@ -76,7 +76,6 @@ p {
 .block:hover .button {
   right: 2px;
   bottom: 2px;
-  color: var(--background);
 }
 
 @media (max-width: 768px) {
@@ -118,22 +117,23 @@ p {
 }
 
 .block:hover .description {
-  top: 0px;
   opacity: 1;
 }
 
 .description {
+  display: flex;
+  flex-direction: column;
   opacity: 0;
-  height: 248px;
+  height: 233px;
   position: absolute;
+  align-items: center;
+  justify-content: center;
   background-color: var(--text);
   color: black;
   transition: 0.2s;
   width: 275px;
-  top: -120px;
+  top: 15px;
   border-radius: 10px;
-  border-top-right-radius: 0px;
-  border-top-left-radius: 0px;
 }
 .description p {
   text-align: center;
@@ -146,12 +146,16 @@ p {
   display: flex;
   align-items: center;
   justify-self: center;
+  transition: 0.2s;
 }
 #projects .description .block svg {
   fill: var(--text);
   transition: 0.2s;
 }
 
+#projects .description .block:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
 #projects .description .block:hover svg {
   fill: var(--background);
 }
