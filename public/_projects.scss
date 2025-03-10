@@ -53,6 +53,7 @@
     svg {
         fill: var(--text);
         transition: 0.2s;
+        visibility: hidden
     }
 }
 
@@ -60,6 +61,7 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     svg {
         fill: var(--background);
+        visibility: visible
     }
 }
 

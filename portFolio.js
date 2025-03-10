@@ -13,3 +13,12 @@ toggleVideo === null || toggleVideo === void 0 ? void 0 : toggleVideo.addEventLi
 document.addEventListener("DOMContentLoaded", () => {
     videoTag.pause();
 });
+
+const notDone = document.querySelectorAll(".not_done");
+
+for (let i = 0; i < notDone.length; i++) {
+    notDone[i].addEventListener("click", (e) => {
+        e.preventDefault();
+        alert("Il questa funzione non è ancora stata implementata");
+    });
+}
